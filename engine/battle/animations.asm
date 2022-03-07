@@ -419,7 +419,7 @@ MoveAnimation:
 .moveAnimation
 	; check if battle animations are disabled in the options
 	ld a, [wOptions]
-	bit 7, a
+	bit BIT_BATTLE_ANIMATION, a
 	jr nz, .animationsDisabled
 	call ShareMoveAnimations
 	call PlayAnimation
@@ -701,7 +701,7 @@ INCLUDE "data/battle_anims/special_effects.asm"
 
 DoBallTossSpecialEffects:
 	ld a, [wcf91]
-	cp 3 ; is it a Master Ball or Ultra Ball?
+	cp ULTRA_BALL + 1 ; is it a Master Ball or Ultra Ball?
 	jr nc, .skipFlashingEffect
 .flashingEffect ; do a flashing effect if it's Master Ball or Ultra Ball
 	ldh a, [rOBP0]
@@ -717,7 +717,7 @@ DoBallTossSpecialEffects:
 	call PlaySound
 .skipPlayingSound
 	ld a, [wIsInBattle]
-	cp 02 ; is it a trainer battle?
+	cp 2 ; is it a trainer battle?
 	jr z, .isTrainerBattle
 	ld a, [wd11e]
 	cp $10 ; is the enemy pokemon the Ghost Marowak?
@@ -1790,7 +1790,7 @@ AnimationMinimizeMon:
 	ld bc, 7 * 7 * $10
 	call FillMemory
 	pop hl
-	ld de, $194
+	ld de, 7 * 3 * $10 + 4 * $10 + 4
 	add hl, de
 	ld de, MinimizedMonSprite
 	ld c, MinimizedMonSpriteEnd - MinimizedMonSprite
@@ -1806,7 +1806,15 @@ AnimationMinimizeMon:
 	jp AnimationShowMonPic
 
 MinimizedMonSprite:
-	INCBIN "gfx/battle/minimize.1bpp"
+; 8x5 partial tile graphic
+pusho
+opt b.X ; . = 0, X = 1
+	db %...XX...
+	db %..XXXX..
+	db %.XXXXXX.
+	db %..XXXX..
+	db %..X..X..
+popo
 MinimizedMonSpriteEnd:
 
 AnimationSlideMonDownAndHide:

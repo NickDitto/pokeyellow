@@ -122,7 +122,7 @@ __tmhm_value__ = NUM_TMS + 1
 
 add_tmnum: MACRO
 \1_TMNUM EQU __tmhm_value__
-__tmhm_value__ = __tmhm_value__ + 1
+__tmhm_value__ += 1
 ENDM
 
 add_hm: MACRO
@@ -218,3 +218,4 @@ UNUSED_TMNUM EQU __tmhm_value__
 
 ; used for Time Capsule held item compatibility
 TWISTEDSPOON_GSC EQU $60
+LIGHT_BALL_GSC   EQU $a3

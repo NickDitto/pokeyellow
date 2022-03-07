@@ -1,16 +1,16 @@
 PalletTown_Object:
 	db $b ; border block
 
-	def_warps
-	warp  5,  5, 0, REDS_HOUSE_1F
-	warp 13,  5, 0, BLUES_HOUSE
-	warp 12, 11, 1, OAKS_LAB
+	def_warp_events
+	warp_event  5,  5, REDS_HOUSE_1F, 1
+	warp_event 13,  5, BLUES_HOUSE, 1
+	warp_event 12, 11, OAKS_LAB, 2
 
-	def_signs
-	sign 13, 13, 4 ; PalletTownText4
-	sign  7,  9, 5 ; PalletTownText5
-	sign  3,  5, 6 ; PalletTownText6
-	sign 11,  5, 7 ; PalletTownText7
+	def_bg_events
+	bg_event 13, 13, 4 ; PalletTownText4
+	bg_event  7,  9, 5 ; PalletTownText5
+	bg_event  3,  5, 6 ; PalletTownText6
+	bg_event 11,  5, 7 ; PalletTownText7
 
 	def_objects
 	object SPRITE_OAK, 10, 4, STAY, NONE, 1 ; person
