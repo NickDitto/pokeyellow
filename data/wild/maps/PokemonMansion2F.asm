@@ -8,7 +8,7 @@ PokemonMansion2FWildMons:
 	db 40, RATICATE
 	db 32, GRIMER
 	db 35, GRIMER
-	db 35, MUK
+	db 35, KOFFING
 	db 38, MUK
 	end_grass_wildmons
 

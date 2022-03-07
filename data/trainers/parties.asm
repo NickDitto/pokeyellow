@@ -529,6 +529,8 @@ GiovanniData:
 	db $FF, 37, NIDORINO, 35, PERSIAN, 37, RHYHORN, 41, NIDOQUEEN, 0
 ; Viridian Gym
 	db $FF, 50, DUGTRIO, 53, PERSIAN, 53, NIDOQUEEN, 55, NIDOKING, 55, RHYDON, 0
+;Pallet Town
+	db $FF, 99, HAUNTER, 0
 
 RocketData:
 ; Mt. Moon B2F

@@ -8,7 +8,7 @@ SeafoamIslandsB4FWildMons:
 	db 32, SEEL
 	db 27, GOLBAT
 	db 45, ZUBAT
-	db 30, DEWGONG
+	db 30, JYNX
 	db 34, DEWGONG
 	end_grass_wildmons
 

@@ -7,7 +7,7 @@ SeafoamIslandsB3FWildMons:
 	db 30, KINGLER
 	db 26, SEEL
 	db 31, KRABBY
-	db 30, SEEL
+	db 30, JYNX
 	db 28, DEWGONG
 	db 32, DEWGONG
 	end_grass_wildmons

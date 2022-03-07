@@ -1,0 +1,11 @@
+File Home/Overworld.asm
+Line --- - Addition of Run B Button Mod
+
+#Wild Data#
+data/wild/maps/ViridianForest.asm
+data/wild/maps/Route4.asm
+route5
+pokemon mansion flr2
+seafoamisl flr 3 & 4
+
+#Pallete Changes#

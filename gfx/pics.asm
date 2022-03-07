@@ -128,6 +128,8 @@ JynxPicFront::        INCBIN "gfx/pokemon/front/jynx.pic"
 JynxPicBack::         INCBIN "gfx/pokemon/back/jynxb.pic"
 MoltresPicFront::     INCBIN "gfx/pokemon/front/moltres.pic"
 MoltresPicBack::      INCBIN "gfx/pokemon/back/moltresb.pic"
+DeoxysPicFront::   	  INCBIN "gfx/pokemon/front/deoxys.pic"
+DeoxysPicBack::    	  INCBIN "gfx/pokemon/back/deoxysb.pic"
 
 
 SECTION "Pics 3", ROMX

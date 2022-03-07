@@ -1,0 +1,69 @@
+File Home/Overworld.asm
+Line --- - Addition of Run B Button Mod
+
+data/wild/maps/ViridianForest.asm
+data/wild/maps/Route4.asm
+route5
+pokemon mansion flr2
+seafoamisl flr 3 & 4
+
+
+#Deoxys#
+***For referance to files changed*
+; pokemon ids
+; indexes for:
+; - MonsterNames (see data/pokemon/names.asm)
+; - EvosMovesPointerTable (see data/pokemon/evos_moves.asm)
+; - CryData (see data/pokemon/cries.asm)
+; - PokedexOrder (see data/pokemon/dex_order.asm)
+; - PokedexEntryPointers (see data/pokemon/dex_entries.asm)
+***
+Copy File from Mewtwo, then edited
+\data\pokemon\base_stats\deoxys.asm
+
+
+\data\pokemon\names.asm
+Line 33
+From:
+	db "MISSINGNO."
+To:
+	db "DEOXYS@@@@"
+*
+\data\pokemon\evos_moves.asm
+MissingNo1FEvosMoves
+
+\data\pokemon\cries.asm
+Line 39
+
+\data\pokemon\dex_order.asm
+line 33
+
+\data\pokemon\dex_entries.asm
+Added Line range
+1257 - 1263
+
+\data\pokemon\dex_text.asm
+Added Lines range
+1510 - 1518
+
+_DeoxysDexEntry::
+	text "It seems to be a"
+	next "mutated virus,"
+	next "Maybe #rus?"
+
+	page "#More studies are"
+	next "necessary"
+	dex
+
+*
+\constants\pokedex_constants.asm
+Line Added 158
+	const DEX_DEOXYS     ; 152
+*
+Prize Pokemon data
+*
+\data\pokemon\base_stats.asm
+New line bottome of doc
+*
+\constants\pokemon_constants.asm
+Line 40 form Skip to Deoxys

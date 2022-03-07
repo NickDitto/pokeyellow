@@ -7,7 +7,7 @@ PokemonMansionB1FWildMons:
 	db 41, MUK
 	db 43, RATICATE
 	db 24, DITTO
-	db 46, RATICATE
+	db 46, MAGMAR
 	db 18, DITTO
 	db 12, DITTO
 	end_grass_wildmons

@@ -16,5 +16,6 @@ PalletTown_Object:
 	object SPRITE_OAK, 10, 4, STAY, NONE, 1 ; person
 	object SPRITE_GIRL, 3, 8, WALK, ANY_DIR, 2 ; person
 	object SPRITE_FISHER, 11, 14, WALK, ANY_DIR, 3 ; person
+	object SPRITE_POKE_BALL, 3, 12, STAY, NONE, 1, SUPER_ROD
 
 	def_warps_to PALLET_TOWN

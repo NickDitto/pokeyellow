@@ -30,7 +30,7 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
+	dw DeoxysDexEntry
 	dw MissingNoDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
@@ -1252,6 +1252,13 @@ MewDexEntry:
 	db 1,4
 	dw 90
 	text_far _MewDexEntry
+	text_end
+	
+DeoxysDexEntry:
+	db "DNA SPECIE@"
+	db 5,5
+	dw 1340
+	text_far _DeoxysDexEntry
 	text_end
 
 MissingNoDexEntry:

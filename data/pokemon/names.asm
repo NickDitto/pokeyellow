@@ -30,7 +30,7 @@ MonsterNames::
 	db "BLASTOISE@"
 	db "PINSIR@@@@"
 	db "TANGELA@@@"
-	db "MISSINGNO."
+	db "DEOXYS@@@@"
 	db "MISSINGNO."
 	db "GROWLITHE@"
 	db "ONIX@@@@@@"

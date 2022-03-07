@@ -1506,3 +1506,12 @@ _MewDexEntry::
 	next "fine, delicate"
 	next "hair can be seen"
 	dex
+
+_DeoxysDexEntry::
+	text "It seems to be a"
+	next "mutated virus,"
+	next "Maybe #rus?"
+
+	page "More studies are"
+	next "necessary"
+	dex
